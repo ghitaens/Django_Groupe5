@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-zo/1mFHdZB7VYceOo8p8oef3KxX945VZ/F9WO+RJv2Q+/f7PmJyBmFGBq3xJ1I6+" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand ml-auto" href="#">
+              <img src="{% static 'images/logoo.png' %}" alt="Logo" width="50" height="50">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="../">Accueil</a>
+                <a class="nav-item nav-link" href="../listesalle/">Liste des salles</a>
+                <a class="nav-item nav-link" href="../reserversalle/">Reserver salle</a>
+                <a class="nav-item nav-link" href="../mesreservations/">Mes reservations</a>
+                <a class="nav-item nav-link" href="../ajoutersalle/">Ajouter une salle</a>
+              </div>
+            <a href="/admin" class="btn btn-outline-success my-2 my-sm-0">Admin</a>
+            </div>
+        </nav>
+              
+
+        {%block content%}
+        {%endblock content%}
+    </body>
+</html>

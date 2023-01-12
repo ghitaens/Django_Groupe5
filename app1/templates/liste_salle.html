@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<!-- view_salle.html -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Nombre d'invités</th>
+      <th>Machine à café</th>
+      <th>Tableau blanc</th>
+      <th>Wi-Fi</th>
+      <th>Projecteur</th>
+      <th>En construction</th>      
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for s in salle %}
+      <tr>
+        <td>{{ s.nom }}</td>
+        <td>{{ s.nombre_invite }}</td>
+        <td>{{ s.machine_a_cafe }}</td>
+        <td>{{ s.tableau_blanc }}</td>
+        <td>{{ s.wifi }}</td>
+        <td>{{ s.projecteur }}</td>
+        <td>{{ s.en_construction }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{%endblock content%}

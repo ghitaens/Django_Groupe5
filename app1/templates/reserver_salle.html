@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+
+{%block content%}
+<h3 class="text-center mt-4">Reserver une salle :</h3>
+  <form method="post" class="form p-4 border rounded">
+      {% csrf_token %}
+      {% crispy form %}
+  </form>
+{%endblock content%}
+
+
+
+
