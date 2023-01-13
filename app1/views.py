@@ -8,9 +8,6 @@ from django.db.models import Subquery
 
 
 
-def home_view(request):
-    return render(request, 'home_employe.html')
-
 def homeemploye_view(request):
     return render(request, 'home_employe.html')
 
