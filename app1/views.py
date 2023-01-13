@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from .forms import InfosSalleForm,SearchForm
 from .models import InfosSalle
@@ -60,7 +59,6 @@ def search_view(request):
 
             
 
-            # Search for matching records in the infos_salle table
             infos_salle_results = InfosSalle.objects.filter(
                 nombre_invite=nombre_invite,
                 machine_a_cafe=machine_a_cafe,
