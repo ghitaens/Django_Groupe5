@@ -1,13 +1,13 @@
 {%extends 'base.html'%}
 
 {%block content%}
+
+
 {% if message %}
     <p class="alert alert-info">{{ message }}</p>
 {% endif %}
-{% if message_aucun %}
-    <p class="alert alert-info">{{ message_aucun }}</p>
-{% endif %}
-   
+ 
+
 {%if  reserved_room %}
     <div class="container mt-5">
         <div class="card">
@@ -25,7 +25,9 @@
         </div>
         </div>
     </div>
+
 {%elif  available_rooms_infos %}
+
 <table class="table table-bordered">
     <thead class="thead-dark">
         <tr>
@@ -58,6 +60,7 @@
             {% endfor %}
     </tbody>
 </table>
+
 {%endif%}
 
 
